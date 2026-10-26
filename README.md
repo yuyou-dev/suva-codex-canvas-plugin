@@ -1,17 +1,11 @@
-# suva-codex画布工程插件
+# suva-codex画布工程插件 v0.1.12
 
-公开固定版本 v0.1.11。GitHub下载不需要GitHub或SUVA登录；安装后在右侧登录SUVA，通过sessionID自动连接。
+> 请按 https://raw.githubusercontent.com/yuyou-dev/suva-codex-canvas-plugin/v0.1.12/START_HERE.md 安装并连接「suva-codex画布工程插件」，登录和授权由我完成。
 
-> 请按 https://raw.githubusercontent.com/yuyou-dev/suva-codex-canvas-plugin/v0.1.11/START_HERE.md 安装并连接「suva-codex画布工程插件」，登录和授权由我完成。
+修复新电脑或新聊天已连接账号但缺少创作工具的问题：启动即提供 5 个连接/上传工具及 58 个业务工具声明，登录后无需依赖宿主动态刷新。工具声明不是工程数据；实际调用仍校验账号与工程权限。
 
-归档 `suva-jewelry-canvas-0.1.11.tar.gz`：379937 字节，SHA256 `459bff81fc8637b76f5ddc2d7f0b363df3da5ecb2b8851335951dc9fc07fdc19`。
+安装包可匿名下载，安装后通过 sessionID 关联右侧 SUVA 网站账号。新连接默认仅创建及访问通过本连接创建的工程，历史工程按明确需求授权。核心提示词、业务实现、凭据、数据库和用户图片不在包内。
 
-本归档与已上线的网站备用v0.1.11安装包字节完全一致。新增sessionID关联当前登录，无独立允许按钮；新连接默认仅创建及本连接新工程。账号核验、原预处理、原配方和结果回传逻辑保留。
+插件 82 项测试、服务端账号/工程权限 69 项测试、公开契约一致性测试通过。已验证宿主仅读取一次列表、忽略刷新通知，以及无凭据读取权限的独立 stdio 启动首轮返回 63 个工具。新电脑真实 Codex 生图并保存画布仍需在更新后验收，协议测试不等于真实宿主验收。
 
-本仓库只分发薄连接器及文档；原业务源码仓库仍私有，核心提示词、凭据、数据库和用户图片不在包内。旧版本不覆盖。
-
-当前公开START_HERE.md是GitHub安装指引；包内README含历史渠道说明，不要求先登录网站才能下载。
-
-已完成插件81项、连接46项和下载及server38项测试。真实Codex宿主工具曝光、全新电脑和新版真实生图完整回传仍需分别验收，不把协议探测或安装成功称为全流程通过。
-
-[下载使用说明书 v1.9（PDF）](https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.11/SUVA-Getting-Started-v1.9.pdf)，包含9项功能、18条示例。
+固定归档 `suva-jewelry-canvas-0.1.12.tar.gz`，408013 字节，SHA256 `22382ee2fee0b63564c0742eb24ff3fb2911bf93781f575fc1167af63ebf445b`。旧版本不覆盖。
