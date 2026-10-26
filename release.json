@@ -1,12 +1,12 @@
 {
   "schemaVersion": "suva.public-distribution.v1",
-  "version": "0.1.9",
-  "archive": "suva-jewelry-canvas-0.1.9.tar.gz",
-  "sha256": "7ea871efb1e61c7cc8701f00281db767d8f0d04143b44d2b914341637c624495",
-  "byteLength": 369159,
-  "downloadUrl": "https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.9/suva-jewelry-canvas-0.1.9.tar.gz",
-  "startUrl": "https://raw.githubusercontent.com/yuyou-dev/suva-codex-canvas-plugin/v0.1.9/START_HERE.md",
-  "releaseUrl": "https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/tag/v0.1.9",
+  "version": "0.1.10",
+  "archive": "suva-jewelry-canvas-0.1.10.tar.gz",
+  "sha256": "8946f4e43f25c3d94c9b277b3b08c78e9a392d36d3ffab5de124e49387f79dc0",
+  "byteLength": 373594,
+  "downloadUrl": "https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.10/suva-jewelry-canvas-0.1.10.tar.gz",
+  "startUrl": "https://raw.githubusercontent.com/yuyou-dev/suva-codex-canvas-plugin/v0.1.10/START_HERE.md",
+  "releaseUrl": "https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/tag/v0.1.10",
   "distribution": {
     "status": "published",
     "repository": "yuyou-dev/suva-codex-canvas-plugin",
@@ -21,11 +21,11 @@
     "codexCli": "required"
   },
   "files": {
-    "README.md": "https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.9/README.md",
-    "START_HERE.md": "https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.9/START_HERE.md",
-    "release.json": "https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.9/release.json",
-    "SHA256SUMS": "https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.9/SHA256SUMS",
-    "suva-jewelry-canvas-0.1.9.tar.gz": "https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.9/suva-jewelry-canvas-0.1.9.tar.gz"
+    "README.md": "https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.10/README.md",
+    "START_HERE.md": "https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.10/START_HERE.md",
+    "release.json": "https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.10/release.json",
+    "SHA256SUMS": "https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.10/SHA256SUMS",
+    "suva-jewelry-canvas-0.1.10.tar.gz": "https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.10/suva-jewelry-canvas-0.1.10.tar.gz"
   },
   "consentPolicy": {
     "reuseValidAuthorization": true,
@@ -33,7 +33,7 @@
     "automaticallyGrantCreate": false
   },
   "knownLimitations": [
-    "status does not return grant-user identity; automatic website/grant-account comparison is not implemented"
+    "Same-page connection requires updated server metadata; older servers retain the compatibility authorization flow."
   ],
   "profile": {
     "name": "SUVA Jewelry Canvas",
@@ -41,6 +41,6 @@
     "browserOrigin": "https://yuyou80-jewelry-design-canvas.ms.show",
     "apiOrigin": "https://studio-yuyou80-jewelry-design-canvas.api-inference.modelscope.net",
     "issuer": "https://www.modelscope.cn",
-    "version": "0.1.9"
+    "version": "0.1.10"
   }
 }
