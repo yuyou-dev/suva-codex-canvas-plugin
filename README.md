@@ -1,17 +1,17 @@
-# suva-codex画布工程插件 v0.1.15
+# suva-codex画布工程插件 v0.1.16
 
-> 请按 https://raw.githubusercontent.com/yuyou-dev/suva-codex-canvas-plugin/v0.1.15/START_HERE.md 安装并连接「suva-codex画布工程插件」，登录和授权由我完成。
+> 请按 https://raw.githubusercontent.com/yuyou-dev/suva-codex-canvas-plugin/v0.1.16/START_HERE.md 安装并连接「suva-codex画布工程插件」，登录和授权由我完成。
 
 本版默认通过魔搭云端 MCP 和同源加密消息通道连接 SUVA，不启动本机 HTTP 端口。安装后打开本次工作台链接，登录 SUVA 并核对会话账号；有效授权按原范围恢复。独立 HTTPS 消息服务保留为显式备用（connectionTransport=https），不会自动改成本机监听。启动即提供 5 个连接/上传工具及 58 个业务工具声明；声明不是工程数据，调用仍校验账号与工程权限。
 
-创作前一次展示缺少的多组选项，等用户统一提交后再生成，原提示词与默认值保留服务端。云端网关控制请求节奏，网页使用可校验的空闲心跳；异常保留明确错误码，写入不会自动重发。无真实用户编辑时，画布自动接纳云端保存的新版本；有本地编辑冲突时保留草稿。
+创作前一次展示缺少的多组选项，等用户统一提交后再生成，原提示词与默认值保留服务端。云端网关控制请求节奏，网页使用可校验的空闲心跳；异常保留明确错误码，普通业务写入不会自动重发；仅服务端标记 retrySafe 的二进制上传遇到外层 429 时，复用同一能力有限重试。无真实用户编辑时，画布自动接纳云端保存的新版本；有本地编辑冲突时保留草稿。
 
 安装包可匿名下载，安装后通过 sessionID 关联右侧 SUVA 网站账号。新连接默认仅创建及访问通过本连接创建的工程，历史工程按明确需求授权。核心提示词、业务实现、凭据、数据库和用户图片不在包内。
 
 本地 stdio 连接器仍负责工具传输和读取本轮生成文件上传；业务逻辑、提示词、消息队列与网关运行在魔搭。连接服务没有消息解密密钥，平台部署凭据仅在私密云端环境。临时连接链接不可分享。当前环境已实测原生生图、约1.3MB二进制上传、校验回执、历史与画布保存；其他电脑和网络仍需复测，不承诺百分之百连通。
 
-使用说明书 v1.13：[PDF](https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.15/SUVA-Getting-Started-v1.13.pdf) · [Markdown](https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.15/SUVA-Getting-Started-v1.13.md)。
+使用说明书 v1.14：[PDF](https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.16/SUVA-Getting-Started-v1.14.pdf) · [Markdown](https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.16/SUVA-Getting-Started-v1.14.md)。
 
 已知限制：外部 Chrome 的魔搭嵌入页出现过空白，手动刷新仍复现，根因未确认。按用户要求先发布本模块，供其他电脑继续测试；不能把本环境验收视为所有浏览器已通过。旧会话返回 HTTP 404/410 时需 Codex 建立新会话，旧页面重试无法恢复已结束的通道。
 
-固定归档 `suva-jewelry-canvas-0.1.15.tar.gz`，433732 字节，SHA256 `00160480d6fef65034c65673d64da48634aa2b136eb3777a19fb4283bf1786e1`。旧版本不覆盖。
+固定归档 `suva-jewelry-canvas-0.1.16.tar.gz`，433990 字节，SHA256 `cc0a0b62c4cc3d983f1dd54f8b2cd253e0699b69836eae3c023b5d1312e2e0d3`。旧版本不覆盖。
