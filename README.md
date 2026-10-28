@@ -1,6 +1,6 @@
-# suva-codex画布工程插件 v0.1.16
+# suva-codex画布工程插件 v0.1.17
 
-> 请按 https://raw.githubusercontent.com/yuyou-dev/suva-codex-canvas-plugin/v0.1.16/START_HERE.md 安装并连接「suva-codex画布工程插件」，登录和授权由我完成。
+> 请按 https://raw.githubusercontent.com/yuyou-dev/suva-codex-canvas-plugin/v0.1.17/START_HERE.md 安装并连接「suva-codex画布工程插件」，登录和授权由我完成。
 
 本版默认通过魔搭云端 MCP 和同源加密消息通道连接 SUVA，不启动本机 HTTP 端口。安装后打开本次工作台链接，登录 SUVA 并核对会话账号；有效授权按原范围恢复。独立 HTTPS 消息服务保留为显式备用（connectionTransport=https），不会自动改成本机监听。启动即提供 5 个连接/上传工具及 58 个业务工具声明；声明不是工程数据，调用仍校验账号与工程权限。
 
@@ -10,8 +10,10 @@
 
 本地 stdio 连接器仍负责工具传输和读取本轮生成文件上传；业务逻辑、提示词、消息队列与网关运行在魔搭。连接服务没有消息解密密钥，平台部署凭据仅在私密云端环境。临时连接链接不可分享。当前环境已实测原生生图、约1.3MB二进制上传、校验回执、历史与画布保存；其他电脑和网络仍需复测，不承诺百分之百连通。
 
-使用说明书 v1.14：[PDF](https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.16/SUVA-Getting-Started-v1.14.pdf) · [Markdown](https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.16/SUVA-Getting-Started-v1.14.md)。
+本版补齐能力发现与幂等准备上传的429恢复，并提供operationId供同授权内恢复同一次上传；失败有阶段和重试统计。三视图明确1:1，异常比例原图保留画布待修正草稿，再最多纠正生成一次。底部状态单行，提示浮窗可关闭及重新展开。第三方429不能保证完全避免。
+
+使用说明书 v1.15：[PDF](https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.17/SUVA-Getting-Started-v1.15.pdf) · [Markdown](https://github.com/yuyou-dev/suva-codex-canvas-plugin/releases/download/v0.1.17/SUVA-Getting-Started-v1.15.md)。
 
 已知限制：外部 Chrome 的魔搭嵌入页出现过空白，手动刷新仍复现，根因未确认。按用户要求先发布本模块，供其他电脑继续测试；不能把本环境验收视为所有浏览器已通过。旧会话返回 HTTP 404/410 时需 Codex 建立新会话，旧页面重试无法恢复已结束的通道。
 
-固定归档 `suva-jewelry-canvas-0.1.16.tar.gz`，433990 字节，SHA256 `cc0a0b62c4cc3d983f1dd54f8b2cd253e0699b69836eae3c023b5d1312e2e0d3`。旧版本不覆盖。
+固定归档 `suva-jewelry-canvas-0.1.17.tar.gz`，438149 字节，SHA256 `4d26499469522d0aae656d7457691117977874568275255bde0ba7661562243e`。旧版本不覆盖。
